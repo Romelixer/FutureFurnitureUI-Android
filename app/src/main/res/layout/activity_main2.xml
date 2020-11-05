@@ -9,7 +9,7 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
+        android:background="#094798"
         android:paddingTop="24dp"
         android:theme="@style/AppTheme.AppBarOverlay"
         app:elevation="0dp">
@@ -19,7 +19,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:theme="@style/AppTheme.Toolbar">
+            app:theme="@style/AppTheme.Toolbar"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -32,28 +33,14 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="8dp">
 
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:src="@drawable/ic_menu_white_24dp" />
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="64dp"
+                        android:layout_marginLeft="8dp"
                         android:fontFamily="@font/calibri"
                         android:text="Discover"
                         android:textColor="#FFFFFF"
                         android:textSize="24sp" />
-
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:src="@drawable/ic_shopping_cart_white_24dp" />
 
                 </RelativeLayout>
 
@@ -132,7 +119,10 @@
                             app:cardCornerRadius="8dp"
                             app:cardElevation="4dp"
                             app:cardUseCompatPadding="true"
-                            app:contentPadding="12dp">
+                            app:contentPadding="12dp"
+                            android:id = "@+id/cardview1"
+                            app:cardBackgroundColor="@color/brand_color"
+                            >
 
                             <LinearLayout
                                 android:layout_width="100dp"
@@ -142,7 +132,7 @@
                                 <ImageView
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
-                                    android:src="@drawable/plant_white_bg" />
+                                    android:src="@drawable/ic_shopping_cart_white_24dp" />
 
                                 <RelativeLayout
                                     android:layout_width="match_parent"
@@ -153,8 +143,57 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/calibri"
-                                        android:text="Plant"
-                                        android:textColor="#3C3C3C"
+                                        android:text="Shop"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="16sp"
+                                        />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:src="@drawable/ic_arrow_forward_black_24dp" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cardview2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="4dp"
+                            app:cardUseCompatPadding="true"
+                            app:contentPadding="12dp"
+                            app:cardBackgroundColor="@color/brand_color"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                >
+
+                                <ImageView
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/layer_1" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="16dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/calibri"
+                                        android:text="Recipes"
+                                        android:textColor="#ffffff"
                                         android:textSize="16sp" />
 
                                     <ImageView
@@ -176,8 +215,8 @@
                             app:cardCornerRadius="8dp"
                             app:cardElevation="4dp"
                             app:cardUseCompatPadding="true"
-                            app:contentPadding="12dp">
-
+                            app:contentPadding="12dp"
+                            app:cardBackgroundColor="@color/brand_color">
                             <LinearLayout
                                 android:layout_width="100dp"
                                 android:layout_height="wrap_content"
@@ -186,7 +225,7 @@
                                 <ImageView
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
-                                    android:src="@drawable/lamp_white_bg" />
+                                    android:src="@drawable/product_icon" />
 
                                 <RelativeLayout
                                     android:layout_width="match_parent"
@@ -197,8 +236,8 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/calibri"
-                                        android:text="Lamp"
-                                        android:textColor="#3C3C3C"
+                                        android:text="Products"
+                                        android:textColor="#ffffff"
                                         android:textSize="16sp" />
 
                                     <ImageView
@@ -211,49 +250,6 @@
 
                             </LinearLayout>
 
-                        </android.support.v7.widget.CardView>
-
-                        <android.support.v7.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="4dp"
-                            app:cardCornerRadius="8dp"
-                            app:cardElevation="4dp"
-                            app:cardUseCompatPadding="true"
-                            app:contentPadding="12dp">
-
-                            <LinearLayout
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="36dp"
-                                    android:layout_height="36dp"
-                                    android:src="@drawable/chair_white_bg" />
-
-                                <RelativeLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="16dp">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:fontFamily="@font/calibri"
-                                        android:text="Chair"
-                                        android:textColor="#3C3C3C"
-                                        android:textSize="16sp" />
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_alignParentTop="true"
-                                        android:layout_alignParentEnd="true"
-                                        android:src="@drawable/ic_arrow_forward_black_24dp" />
-                                </RelativeLayout>
-
-                            </LinearLayout>
 
                         </android.support.v7.widget.CardView>
 
@@ -268,7 +264,7 @@
                     android:layout_marginRight="4dp"
                     android:fontFamily="@font/calibri"
                     android:padding="8dp"
-                    android:text="Hot Item"
+                    android:text="Hot Items"
                     android:textColor="#000000"
                     android:textSize="18sp" />
 
@@ -293,17 +289,19 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="8dp"
                             android:layout_weight="50"
-                            app:cardCornerRadius="16dp">
+                            app:cardCornerRadius="16dp"
+                            >
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                >
 
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="200dp"
                                     android:scaleType="centerCrop"
-                                    android:src="@drawable/favorite_img_4" />
+                                    android:src="@drawable/app_cook_img" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -317,7 +315,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/calibri"
-                                        android:text="Cactus"
+                                        android:text="Multi function pressure cooker"
                                         android:textColor="#FFFFFF"
                                         android:textSize="14sp"
                                         android:textStyle="bold" />
