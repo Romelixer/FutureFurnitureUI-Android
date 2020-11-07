@@ -1,6 +1,7 @@
 package com.shashank.platform.furnitureecommerceappui;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Button;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -15,6 +17,7 @@ public class Main2Activity extends AppCompatActivity {
     FloatingActionButton favorite;
     CardView cactusCardView;
     CardView cardview3;
+    Button buynowbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +28,7 @@ public class Main2Activity extends AppCompatActivity {
         favorite = findViewById(R.id.favorite);
         cactusCardView = findViewById(R.id.cactus_card_view);
         cardview3 = findViewById(R.id.card_view3);
+        buynowbtn = findViewById(R.id.buynowbtn);
         personLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,10 +54,13 @@ public class Main2Activity extends AppCompatActivity {
         cardview3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent i = new Intent(getApplicationContext(),Product1.class);
+                Intent i;
+                i = new Intent(getApplicationContext(),
+                        Product1.class);
                 startActivity(i);
             }
         });
+
     }
 
 }
