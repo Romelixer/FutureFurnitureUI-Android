@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main5Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="279dp">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/watalappan1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="16dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_keyboard_arrow_left_white_24dp" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/ic_favorite_white_24dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:fontFamily="@font/calibri"
+                            android:text="Watalappan"
+                            android:textColor="#000000"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:text="Desert"
+                            android:textColor="#8e8ef6"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:layout_width = "120dp"
+                            android:layout_height = "35dp"
+                            android:layout_weight="50dp"
+                            android:text = "See product"
+                            android:textColor="@android:color/white"
+                            android:textSize = "15sp"
+                            android:background="@drawable/buttonshape2"/>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#dedede" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart = "16dp"
+                >
+                <TableRow>
+                    <TextView
+                        android:text = "Preperation Time:"
+                        android:textSize = "15sp"
+                        android:textColor = "@android:color/black"
+                        />
+                    <TextView
+                        android:text = "20 mins"
+                        android:textSize = "15sp"
+                        android:textColor = "@android:color/black"
+                        android:layout_marginStart="8dp"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text = "Cook Time:"
+                        android:layout_marginTop="4dp"
+                        android:textColor= "@android:color/black"
+                        android:font = "@font/calibri"
+                        />
+                    <TextView
+                        android:text = "1 hour"
+                        android:layout_marginTop = "4dp"
+                        android:layout_marginStart="8dp"
+                        android:textColor = "@android:color/black"
+                        android:font = "@font/calibri"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                    android:text = "Total Time:"
+                    android:layout_marginTop = "4dp"
+
+                    android:textColor = "@android:color/black"
+                    android:font = "@font/calibri"/>
+                    <TextView
+                        android:text = "1 hour and 20 minutes"
+                        android:layout_marginTop = "4dp"
+                        android:layout_marginStart="8dp"
+                        android:textColor = "@android:color/black"
+                        android:font = "@font/calibri"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text = "Serves:"
+                        android:layout_marginTop = "4dp"
+                        android:textColor = "@android:color/black"
+                        android:font = "@font/calibri"/>
+                    <TextView
+                        android:text = "3 - 4"
+                        android:layout_marginTop = "4dp"
+                        android:layout_marginStart="8dp"
+                        android:textColor = "@android:color/black"
+                        android:font = "@font/calibri"/>
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Ingredients"
+                android:textColor = "@android:color/black"
+                android:font = "@font/calibri"
+                android:textSize = "25sp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:textAllCaps="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "1 cup = 250ml"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "1 cup thick coconut milk Or coconut cream"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "½ cup jaggery"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "3 tbsp hot water"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "1 t/s salt"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "1 t/s mixed spice powder (nutmeg, cardamom and cinnamon powder)"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "2 eggs"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "1 tbsp Rose Essence Or Rose Water"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "8 to 10 cashews"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "20 gms chopped dry coconut"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Frosting (Optional)"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "3 tbsp brown sugar"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "1 tbsp water"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "3 tbsp of butter"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Cocoa powder"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/black"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Instructions"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"/>
+           <TextView
+               android:layout_marginStart="16dp"
+               android:layout_height="wrap_content"
+               android:layout_width = "wrap_content"
+               android:text = "@string/watalappan_recipe1"
+               android:layout_marginBottom="4dp"/>
+            <TextView
+                android:layout_marginStart="16dp"
+                android:layout_height="wrap_content"
+                android:layout_width = "wrap_content"
+                android:text = "@string/watalappan_recipe_line2"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:layout_marginStart="16dp"
+                android:layout_height="wrap_content"
+                android:layout_width = "wrap_content"
+                android:text = "@string/watalappan_recipe_line3"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:layout_marginStart="16dp"
+                android:layout_height="wrap_content"
+                android:layout_width = "wrap_content"
+                android:text = "@string/watalappan_recipe_line4"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:layout_marginStart="16dp"
+                android:layout_height="wrap_content"
+                android:layout_width = "wrap_content"
+                android:text = "@string/watalappan_recipe_line5"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:layout_marginStart="16dp"
+                android:layout_height="wrap_content"
+                android:layout_width = "wrap_content"
+                android:text = "@string/watalappan_recipe_line6"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:layout_marginStart="16dp"
+                android:layout_height="wrap_content"
+                android:layout_width = "wrap_content"
+                android:text = "@string/watalappan_recipe_line7"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_height="wrap_content"
+                android:layout_width = "wrap_content"
+                android:text = "@string/watalappan_recipe_line8"/>
+
+
+
+            <!--<Button
+                android:id = "@+id/buynowbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:background="@drawable/buttonshape"
+                android:fontFamily="@font/calibri"
+                android:text="Buy Now"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Recipes"
+                android:font = "@font/calibri"
+                android:textSize = "25sp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="12dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="50"
+                        app:cardCornerRadius="16dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/yougurt1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:background="#4D000000"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/calibri"
+                                    android:text="Yogurt"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="23sp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="80"
+                                        android:fontFamily="@font/calibri"
+                                        android:text="Desert"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="20dp"
+                                        android:layout_weight="20"
+                                        android:src="@drawable/ic_favorite_red_24dp" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="50"
+                        app:cardCornerRadius="16dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/watalappan1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:background="#4D000000"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/calibri"
+                                    android:text="Watalappan"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="23sp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="80"
+                                        android:fontFamily="@font/calibri"
+                                        android:text="Desert"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="20dp"
+                                        android:layout_weight="20"
+                                        android:src="@drawable/ic_favorite_red_24dp" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="50"
+                        app:cardCornerRadius="16dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/caramel_pudding" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:background="#4D000000"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/calibri"
+                                    android:text="Caramel Pudding"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="23sp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="80"
+                                        android:fontFamily="@font/calibri"
+                                        android:text="Desert"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="20dp"
+                                        android:layout_weight="20"
+                                        android:src="@drawable/ic_favorite_red_24dp" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="50"
+                        app:cardCornerRadius="16dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/cake" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:background="#4D000000"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/calibri"
+                                    android:text="Butter Cake"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="23sp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="80"
+                                        android:fontFamily="@font/calibri"
+                                        android:text="Desert"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="20dp"
+                                        android:layout_weight="20"
+                                        android:src="@drawable/ic_favorite_red_24dp" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>!-->
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>
