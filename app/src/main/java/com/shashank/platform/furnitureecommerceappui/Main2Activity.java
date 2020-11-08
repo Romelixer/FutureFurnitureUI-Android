@@ -17,7 +17,7 @@ public class Main2Activity extends AppCompatActivity {
     FloatingActionButton favorite;
     CardView cactusCardView;
     CardView cardview3;
-    Button buynowbtn;
+    Button buynowbtn1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class Main2Activity extends AppCompatActivity {
         favorite = findViewById(R.id.favorite);
         cactusCardView = findViewById(R.id.cactus_card_view);
         cardview3 = findViewById(R.id.card_view3);
-        buynowbtn = findViewById(R.id.buynowbtn);
+        buynowbtn1 = findViewById(R.id.buynowbtn1);
         personLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
